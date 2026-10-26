@@ -313,6 +313,9 @@ h2{font-size:36px;line-height:1.2;font-weight:700;letter-spacing:-.01em}
 @keyframes flame{0%,100%{box-shadow:0 0 0 0 rgba(0,47,103,0)}50%{box-shadow:0 0 18px 4px rgba(0,47,103,.4)}}
 .fest-card .hl,.how .hl,.how .eyebrow{color:var(--coral-soft)}
 a.oh-ghost{display:flex;align-items:center;justify-content:center;text-decoration:none}
+.oh-sec{grid-template-columns:1fr}
+.consent a{color:var(--navy);font-weight:600;text-decoration:underline;text-underline-offset:2px}
+.consent a:hover{color:var(--coral)}
 </style>
 </head>
 <body>
@@ -338,8 +341,8 @@ a.oh-ghost{display:flex;align-items:center;justify-content:center;text-decoratio
         </div>
         <div class="oh-cta">
           <a class="oh-btn hero-cta" href="https://www.digilas.infina.co.in/?code=festive999" data-apply rel="noopener">Apply now for Diwali offer <svg viewBox="0 0 24 24"><use href="#arrow"/></svg></a>
-          <div class="oh-sec"><a class="oh-ghost" href="https://www.digilas.infina.co.in/?code=festive999" data-apply rel="noopener">Check eligibility</a><button type="button" class="oh-ghost" data-open="calcM">LAS calculator</button></div>
-          <p class="oh-note">Takes about 30 seconds · Offer valid till 30th November 2026</p>
+          <div class="oh-sec"><a class="oh-ghost" href="https://www.digilas.infina.co.in/?code=festive999" data-apply rel="noopener">Check eligibility</a></div>
+          <p class="oh-note">Sign up in about 30 seconds · Offer valid till 30th November 2026</p>
         </div>
       </div>
     </div>
@@ -388,7 +391,7 @@ a.oh-ghost{display:flex;align-items:center;justify-content:center;text-decoratio
       <ul class="rows">
         <li><span class="n">01</span><div><h3>Quick disbursal</h3><p>Get your loan approved and disbursed quickly.</p></div></li>
         <li><span class="n">02</span><div><h3>Flexible tenure</h3><p>Repay with ease over a period of up to 3 years.</p></div></li>
-        <li><span class="n">03</span><div><h3>No foreclosure charges</h3><p>Close your Flexi loan anytime without extra fees.</p></div></li>
+        <li><span class="n">03</span><div><h3>No foreclosure charges on Flexi loans</h3><p>Close your Flexi loan anytime without extra fees.</p></div></li>
       </ul>
     </div>
   </section>
@@ -425,7 +428,7 @@ a.oh-ghost{display:flex;align-items:center;justify-content:center;text-decoratio
             <label class="f f-full"><span>Primary asset type *</span>
               <select name="asset" required><option value="">Select primary collateral</option><option>Mutual funds</option><option>Listed equity shares</option><option>REITs and InvITs</option><option>Bonds and debentures</option></select></label>
           </div>
-          <label class="consent"><input type="checkbox" name="consent" required><span>I agree to be contacted by Infina Finance Pvt. Ltd. about this offer. [Privacy policy link]</span></label>
+          <label class="consent"><input type="checkbox" name="consent" required><span>I agree to be contacted by Infina Finance Pvt. Ltd. about this offer. <a href="https://cdn.prod.website-files.com/679a606e403156a82f920650/67f2645010db00cd6a218e1e_Privacy%20Policy.pdf" target="_blank" rel="noopener noreferrer">Privacy Policy</a></span></label>
           <button type="submit" class="btn apply-btn">Submit application</button>
           <p class="f-err" id="fErr" role="alert" hidden>Please fill in all fields correctly.</p>
         </form>
@@ -438,21 +441,12 @@ a.oh-ghost{display:flex;align-items:center;justify-content:center;text-decoratio
     </div>
   </section>
 
-  <div class="modal" id="calcM" role="dialog" aria-modal="true" aria-labelledby="calcT" hidden>
-    <div class="modal-box"><button class="modal-x" data-close aria-label="Close">&times;</button>
-      <h3 id="calcT">LAS calculator</h3><p class="m-sub">Estimate your credit limit based on portfolio size.</p>
-      <div class="m-row"><span>Portfolio value</span><b id="pv">₹50,00,000</b></div>
-      <input type="range" id="ps" min="500000" max="50000000" step="500000" value="5000000" aria-label="Portfolio value">
-      <div class="m-res"><div class="m-row"><span>Indicative LTV</span><b>Up to 50% [confirm LTV]</b></div><div class="m-row m-big"><span>Estimated limit</span><b id="el">₹25,00,000</b></div></div>
-      <p class="m-note">Indicative only. Actual limit depends on the securities pledged and credit approval.</p>
-      <a class="btn m-btn" href="https://www.digilas.infina.co.in/?code=festive999" data-apply rel="noopener">Apply for this limit</a></div></div>
-
   <footer class="dis"><div class="wrap">
-  <p>Disclaimer: Loans are secured against market-linked securities, and values move with the market. Loan amounts, interest rates and tenure are indicative and subject to credit approval. * Actual eligibility depends on the securities pledged and applicable credit policy. Processing fee is plus GST. T&amp;C apply. Infina Finance Pvt. Ltd. · RBI-registered NBFC · CIN: [CIN] · RBI reg. no.: [RBI reg. no.] · This page is operated by an authorised marketing partner of Infina Finance.</p>
+  <p>Disclaimer: Loans are secured against market-linked securities, and values move with the market. Loan amounts, interest rates and tenure are indicative and subject to credit approval. * Actual eligibility depends on the securities pledged and applicable credit policy.</p>
 </div></footer>
 
 <div class="pin hide" id="pin">
-  <div class="pin-cta"><a class="btn" href="https://www.digilas.infina.co.in/?code=festive999" data-apply rel="noopener">Check my limit <i><svg viewBox="0 0 24 24"><use href="#arrow"/></svg></i></a></div>
+  <div class="pin-cta"><a class="btn" href="https://www.digilas.infina.co.in/?code=festive999" data-apply rel="noopener">Apply for Diwali Offer <i><svg viewBox="0 0 24 24"><use href="#arrow"/></svg></i></a></div>
   <div class="pin-strip">Infina Finance Pvt. Ltd. · RBI-registered NBFC · T&amp;C apply</div>
 </div>
 
